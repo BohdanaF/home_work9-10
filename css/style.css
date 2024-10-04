@@ -240,6 +240,10 @@ p {
         list-style: none;
     }
 
+    .nav_mobile.active {
+        display: block;
+    }
+
     .nav__item:hover {
         background-color: #d3d3d3;
     }
