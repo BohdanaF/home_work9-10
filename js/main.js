@@ -14,3 +14,12 @@ burger.addEventListener("click", function () {
 })
 
 
+let burger = document.querySelector("#burger");
+console.log(burger);
+let navbarList = document.querySelector("#navbarList");
+console.log(navbarList);
+
+burger.addEventListener("click", function () {
+    burger.classList.toggle("active");
+    navbarList.classList.toggle("navbar-list--active");
+})
