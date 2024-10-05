@@ -78,9 +78,9 @@ p {
     margin-bottom: 15%;
 }
 
-.navbar__btn {
-    display: none;
-}
+/*.navbar__btn {*/
+/*    display: none;*/
+/*}*/
 
 .nav_desktop {
     display: flex;
@@ -159,6 +159,10 @@ p {
 .project__item {
     display: flex;
     gap: 20px;
+    @media screen and (max-width: 1450px) {
+        width: 30%;
+        padding: 8px;
+    }
 }
 
 .project__description {
@@ -199,16 +203,7 @@ p {
     color: #FFFFFF;
 }
 
-@media screen and (max-width: 1450px) {
-    .project__item {
-        width: 30%;
-        padding: 8px;
-    }
-}
-
-
-@media screen and (max-width: 800px) {
-
+@media only screen and (max-width: 800px) {
     .container,
     .about__container {
         width: 90%;
