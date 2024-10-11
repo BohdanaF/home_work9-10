@@ -1,0 +1,44 @@
+@use "theme";
+@use "media_mixin";
+
+.project__number {
+  font-weight: 500;
+}
+
+.project {
+  background-color: theme.$main-color;
+  color: theme.$text-color-light;
+
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+
+    .project__item {
+      display: flex;
+      gap: 20px;
+
+      @include media_mixin.mq(lg) {
+        width: 30%;
+        padding: 8px;
+      }
+
+      @include media_mixin.mq(xs) {
+        gap: 10px;
+        width: 45%;
+      }
+
+      .project__description {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .project__number {
+          font-size: 1.31rem;
+        }
+      }
+    }
+  }
+}

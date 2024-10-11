@@ -1,0 +1,29 @@
+@use "media_mixin";
+
+@mixin size-container {
+  margin: 0 auto;
+  padding: 0 3%;
+  width: 62%;
+}
+
+@mixin text-width {
+  max-width: 600px;
+}
+
+@mixin text-align {
+  text-align: center;
+}
+
+
+.container {
+  @include size-container;
+  @include media_mixin.mq(md) {
+    width: 80%;
+  }
+  @include media_mixin.mq(sm) {
+    width: 90%;
+  }
+  @include media_mixin.mq(xs) {
+    width: 95%;
+  }
+}

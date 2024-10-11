@@ -1,0 +1,30 @@
+@use "theme";
+@use "media_mixin";
+
+.footer {
+  padding: 50px;
+  background-color: theme.$main-color;
+  color: theme.$text-color-light;
+
+  @include media_mixin.mq(sm) {
+    padding: 40px;
+  }
+  @include media_mixin.mq(xs) {
+    padding: 20px;
+  }
+
+  .footer__sm {
+    font-size: 0.81rem;
+    line-height: 1.33rem;
+    padding-top: 20px;
+    color: theme.$text-color-light;
+    @include media_mixin.mq(xs) {
+      padding-top: 10px;
+    }
+  }
+
+  .footer__bg {
+    font-weight: 500;
+    font-size: 1.31rem;
+  }
+}

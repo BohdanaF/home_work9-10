@@ -1,0 +1,49 @@
+@use "theme";
+@use "mixins";
+@use "media_mixin";
+
+$margin: 0 auto;
+
+.work {
+  background-color: theme.$main-bg-color;
+}
+
+.work-header {
+  margin: $margin;
+  padding: 100px 3% 50px;
+  @include mixins.text-width;
+  @include media_mixin.mq(sm) {
+    padding: 80px 3%;
+  }
+  @include media_mixin.mq(xs) {
+    padding: 50px 3%;
+  }
+}
+
+.work-header__text {
+  @include mixins.text-align;
+}
+
+.work-video {
+  margin: $margin;
+  max-width: 1110px;
+  padding-bottom: 100px;
+
+  @include media_mixin.mq(xs) {
+    padding-bottom: 70px;
+  }
+
+  iframe {
+    width: 100%;
+    min-height: 600px;
+    @include media_mixin.mq(md) {
+      height: 500px;
+    }
+    @include media_mixin.mq(sm) {
+      height: 400px;
+    }
+    @include media_mixin.mq(xs) {
+      height: 350px;
+    }
+  }
+}
