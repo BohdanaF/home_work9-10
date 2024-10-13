@@ -96,16 +96,17 @@ header {
   text-decoration: none;
   color: #000;
 }
-.nav__link nav ul.nav_desktop {
+
+nav ul.nav_desktop {
   display: flex;
   list-style: none;
   justify-content: space-between;
   max-width: 611px;
 }
-.nav__link nav ul.nav_desktop:hover {
+nav ul.nav_desktop:hover {
   text-decoration: underline;
 }
-.nav__link nav ul.nav_desktop:hover--active {
+nav ul.nav_desktop:hover--active {
   color: #34547A;
 }
 

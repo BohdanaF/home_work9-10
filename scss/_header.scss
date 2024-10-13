@@ -28,6 +28,7 @@ header {
   display: block;
   text-decoration: none;
   color: theme.$title-color;
+}
 
 nav {
   ul.nav_desktop {
@@ -45,7 +46,7 @@ nav {
       }
     }
   }
-}
+
 
 .navbar {
   .navbar__btn {
